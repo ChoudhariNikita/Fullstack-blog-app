@@ -1,10 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
-    <div>
-      <h2>Login</h2>
-    </div>
+    <div className="auth">
+    <h1>Login</h1>
+     <p>This is an error!</p>
+    <form>
+      <input
+        required
+        type="text"
+        placeholder="username"
+        name="username"
+      />
+      <input
+        required
+        type="password"
+        placeholder="password"
+        name="password"
+      />
+      <button>Login</button>
+      <span>
+        Don't you have an account? <Link to="/register">Register</Link>
+      </span>
+    </form>
+  </div>
   )
 }
 
