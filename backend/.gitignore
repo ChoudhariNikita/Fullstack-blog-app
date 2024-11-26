@@ -7,8 +7,9 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
 
+# Ignore package-lock.json
+package-lock.json
 
 # Environment variables
 .env
@@ -24,3 +25,6 @@ package-lock.json
 
 # Miscellaneous
 .DS_Store
+
+# Build output
+build/
